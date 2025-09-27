@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obstro Insurance - Beauty & Wellness Protection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* Custom Tailwind Configuration for Soft Pastel Pink */
+        :root {
+            --color-pastel-bg: #FFF7FA; /* Very light pink/white hue background */
+            --color-pastel-primary: #F0B6D9; /* Soft main pink */
+            --color-pastel-accent: #E5A3C3; /* Slightly deeper pink for buttons/accents */
+            --color-pastel-text: #374151; /* Dark grey for readability */
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-pastel-bg);
+            color: var(--color-pastel-text);
+        }
+
+        .pastel-bg { background-color: var(--color-pastel-bg); }
+        .pastel-primary { background-color: var(--color-pastel-primary); }
+        .pastel-accent { background-color: var(--color-pastel-accent); }
+        .text-pastel-text { color: var(--color-pastel-text); }
+
+        /* Apply custom colors to Tailwind classes */
+        .config-colors .bg-pastel-bg { background-color: var(--color-pastel-bg); }
+        .config-colors .bg-pastel-primary { background-color: var(--color-pastel-primary); }
+        .config-colors .bg-pastel-accent { background-color: var(--color-pastel-accent); }
+        .config-colors .hover\:bg-pastel-accent-dark:hover { background-color: #D38EAA; }
+        .config-colors .text-pastel-text { color: var(--color-pastel-text); }
+        .config-colors .text-pastel-primary { color: var(--color-pastel-primary); }
+        .config-colors .border-pastel-primary { border-color: var(--color-pastel-primary); }
+    </style>
+</head>
+<body class="config-colors min-h-screen">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-10 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="#" class="text-2xl font-bold text-pastel-accent">
+                    <i class="fas fa-seedling mr-2"></i>Obstro Insurance
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#services" class="text-pastel-text hover:text-pastel-accent transition duration-150">Policies</a>
+                    <a href="#about" class="text-pastel-text hover:text-pastel-accent transition duration-150">Our Story</a>
+                    <a href="#contact" class="text-pastel-text hover:text-pastel-accent transition duration-150">Contact</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <a href="#quote" class="hidden md:inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-full shadow-sm text-white bg-pastel-accent hover:bg-pastel-accent-dark transition duration-300">
+                    Get a Free Quote
+                </a>
+
+                <!-- Mobile Menu Button (Hamburger) - Not functional, for MVP display -->
+                <button type="button" class="md:hidden text-pastel-text hover:text-pastel-accent focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="pastel-bg py-20 sm:py-28 lg:py-36">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-pastel-text leading-tight mb-4">
+                    Flawless <span class="text-pastel-accent">Coverage</span> for the Beauty Industry
+                </h1>
+                <p class="mt-4 text-lg sm:text-xl max-w-3xl mx-auto text-pastel-text opacity-80">
+                    Obstro Insurance specializes in compassionate, transparent liability and property solutions for beauty brands, wellness studios, and cosmetic manufacturers. Protect your craft, effortlessly.
+                </p>
+                <div class="mt-10 flex justify-center space-x-4">
+                    <a href="#quote" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-lg text-white bg-pastel-accent hover:bg-pastel-accent-dark transition duration-300 transform hover:scale-105">
+                        <i class="fas fa-hand-holding-heart mr-2"></i> Get Your Policy
+                    </a>
+                    <a href="#services" class="inline-flex items-center justify-center px-8 py-3 border border-pastel-primary text-base font-medium rounded-full text-pastel-text bg-white shadow-md hover:bg-pastel-primary/50 transition duration-300">
+                        View Specialized Policies
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Core Services/Features Section -->
+        <section id="services" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-pastel-text">Insurance for Beauty, Wellness, and Cosmetics</h2>
+                    <p class="mt-3 text-lg text-pastel-text opacity-70">Flexible plans that address the unique risks of formulation, packaging, and adverse reactions.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Service 1: Allergy & Reaction Shield -->
+                    <div class="bg-pastel-bg/70 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-pastel-primary">
+                        <div class="text-4xl text-pastel-accent mb-4"><i class="fas fa-mask-face"></i></div>
+                        <h3 class="text-xl font-semibold mb-3 text-pastel-text">Allergy & Reaction Shield</h3>
+                        <p class="text-pastel-text opacity-80">Protection against claims arising from adverse skin reactions, severe allergies, or unintended side effects from your product formulations.</p>
+                    </div>
+
+                    <!-- Service 2: Ingredient Integrity Cover -->
+                    <div class="bg-pastel-bg/70 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-pastel-primary">
+                        <div class="text-4xl text-pastel-accent mb-4"><i class="fas fa-flask-vial"></i></div>
+                        <h3 class="text-xl font-semibold mb-3 text-pastel-text">Ingredient Integrity Cover</h3>
+                        <p class="text-pastel-text opacity-80">Coverage for liability resulting from mislabeled, contaminated, or erroneous ingredient formulations and strict regulatory compliance issues.</p>
+                    </div>
+
+                    <!-- Service 3: Fragile Vessel Protection -->
+                    <div class="bg-pastel-bg/70 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-pastel-primary">
+                        <div class="text-4xl text-pastel-accent mb-4"><i class="fas fa-box-open"></i></div>
+                        <h3 class="text-xl font-semibold mb-3 text-pastel-text">Fragile Vessel Protection</h3>
+                        <p class="text-pastel-text opacity-80">Insurance for physical damage, breakage, or leakage of fragile containers (glass jars, pumps) during shipping and handling.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Quote Form / Main CTA Section -->
+        <section id="quote" class="pastel-primary/50 py-16 sm:py-24">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white p-8 sm:p-12 rounded-2xl shadow-2xl border border-pastel-primary/70">
+                    <h2 class="text-3xl font-bold text-center mb-8 text-pastel-text">Request Your Personalized Quote</h2>
+                    <!-- Added onsubmit handler to prevent default form reload and use JS -->
+                    <form id="quoteForm" class="space-y-6" onsubmit="handleQuoteSubmit(event)">
+                        <div>
+                            <label for="full-name" class="block text-sm font-medium text-pastel-text">Company or Full Name</label>
+                            <input type="text" id="full-name" name="full-name" required placeholder="Glow Cosmetics LLC"
+                                class="mt-1 block w-full px-4 py-3 border border-pastel-primary/50 rounded-lg shadow-sm focus:ring-pastel-accent focus:border-pastel-accent transition duration-150">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-pastel-text">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="contact@glowcosmetics.com"
+                                class="mt-1 block w-full px-4 py-3 border border-pastel-primary/50 rounded-lg shadow-sm focus:ring-pastel-accent focus:border-pastel-accent transition duration-150">
+                        </div>
+                        <div>
+                            <label for="interest" class="block text-sm font-medium text-pastel-text">Area of Interest</label>
+                            <select id="interest" name="interest"
+                                class="mt-1 block w-full px-4 py-3 border border-pastel-primary/50 rounded-lg shadow-sm focus:ring-pastel-accent focus:border-pastel-accent transition duration-150 bg-white">
+                                <option value="">Select a policy interest...</option>
+                                <option value="allergy">Allergy & Reaction Shield</option>
+                                <option value="ingredient">Ingredient Integrity Cover</option>
+                                <option value="fragile">Fragile Vessel Protection</option>
+                                <option value="bundle">General Liability/Bundle</option>
+                            </select>
+                        </div>
+                        <div class="pt-4">
+                            <!-- This button is now connected to the handleQuoteSubmit function via the form's onsubmit handler -->
+                            <button type="submit"
+                                class="w-full flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-lg text-white bg-pastel-accent hover:bg-pastel-accent-dark transition duration-300 transform hover:scale-[1.02]">
+                                Submit & Get Protected
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. About Us Snippet (Social Proof/Trust) -->
+        <section id="about" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold text-pastel-text">Why Choose Obstro Insurance?</h2>
+                <div class="mt-8 max-w-xl mx-auto">
+                    <p class="text-lg text-pastel-text opacity-80">
+                        We believe that protecting your brand's reputation shouldn't come with confusing paperwork or hidden risks. Our commitment is to **simplicity, transparency, and genuine human support** specifically tailored for the beauty and wellness space. Since 20XX, we've helped thousands of creators secure their future with gentle, dependable coverage.
+                    </p>
+                </div>
+                <div class="mt-10 flex justify-center space-x-6">
+                    <div class="text-center">
+                        <p class="text-4xl font-extrabold text-pastel-accent">4.9/5</p>
+                        <p class="text-sm text-pastel-text opacity-70">Client Satisfaction</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-4xl font-extrabold text-pastel-accent">10k+</p>
+                        <p class="text-sm text-pastel-text opacity-70">Brands Covered</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="pastel-bg border-t border-pastel-primary/50">
+        <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+            <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+                <div class="px-5 py-2"><a href="#services" class="text-base text-pastel-text hover:text-pastel-accent">Policies</a></div>
+                <div class="px-5 py-2"><a href="#about" class="text-base text-pastel-text hover:text-pastel-accent">About Us</a></div>
+                <div class="px-5 py-2"><a href="#" class="text-base text-pastel-text hover:text-pastel-accent">Claims</a></div>
+                <div class="px-5 py-2"><a href="#" class="text-base text-pastel-text hover:text-pastel-accent">Privacy Policy</a></div>
+            </nav>
+            <div class="mt-8 flex justify-center space-x-6">
+                <!-- Social Icons -->
+                <a href="#" class="text-pastel-accent/70 hover:text-pastel-accent transition duration-150"><span class="sr-only">Facebook</span><i class="fab fa-facebook-f text-xl"></i></a>
+                <a href="#" class="text-pastel-accent/70 hover:text-pastel-accent transition duration-150"><span class="sr-only">Instagram</span><i class="fab fa-instagram text-xl"></i></a>
+                <a href="#" class="text-pastel-accent/70 hover:text-pastel-accent transition duration-150"><span class="sr-only">Twitter</span><i class="fab fa-twitter text-xl"></i></a>
+            </div>
+            <p class="mt-8 text-center text-base text-pastel-text/60">
+                &copy; 2024 Obstro Insurance, Inc. Specialized in Beauty & Wellness. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script to handle button click confirmation and smooth scrolling -->
+    <script>
+        // Function to handle the form submission and provide visual confirmation
+        function handleQuoteSubmit(event) {
+            // 1. Prevent the default form submission (which causes a page reload)
+            event.preventDefault(); 
+            
+            // 2. Log a message to the console to confirm the button click is working
+            console.log("Quote form submitted successfully (MVP placeholder).");
+
+            // 3. Provide visual feedback
+            const submitButton = document.querySelector('#quoteForm button[type="submit"]');
+            if (submitButton) {
+                // Temporarily disable and change text
+                const originalText = submitButton.innerHTML;
+                submitButton.innerHTML = '<i class="fas fa-check-circle mr-2"></i> Quote Submitted!';
+                submitButton.disabled = true;
+                
+                // Reset button after 3 seconds
+                setTimeout(() => {
+                    submitButton.innerHTML = originalText;
+                    submitButton.disabled = false;
+                }, 3000); 
+            }
+        }
+        
+        // Setup smooth scrolling for all internal anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    e.preventDefault();
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
